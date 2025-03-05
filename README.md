@@ -1,5 +1,8 @@
 # 5335-final-project
 
+## Development Notes
+Let's try to have a linear branch tree
+
 ## how to run the simulator with custom maze world and scanned map
 - cd into turtlebot4_ws directory
 - make sure you have ROS2, Ignition Fortress installed
