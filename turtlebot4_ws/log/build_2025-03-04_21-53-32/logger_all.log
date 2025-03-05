@@ -1,0 +1,394 @@
+[0.065s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.065s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x72a60ea77d30>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x72a60ea77550>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x72a60ea77550>>, mixin_verb=('build',))
+[0.171s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.171s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.171s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.171s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.171s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.171s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.171s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/final_project_5335_jel) by extensions ['ignore', 'ignore_ament_install']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/final_project_5335_jel) by extension 'ignore'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/final_project_5335_jel) by extension 'ignore_ament_install'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/final_project_5335_jel) by extensions ['colcon_pkg']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/final_project_5335_jel) by extension 'colcon_pkg'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/final_project_5335_jel) by extensions ['colcon_meta']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/final_project_5335_jel) by extension 'colcon_meta'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/final_project_5335_jel) by extensions ['ros']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/final_project_5335_jel) by extension 'ros'
+[0.180s] DEBUG:colcon.colcon_core.package_identification:Package 'src/final_project_5335_jel' with type 'ros.ament_python' and name 'final_project_5335_jel'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_simulator) by extensions ['ignore', 'ignore_ament_install']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_simulator) by extension 'ignore'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_simulator) by extension 'ignore_ament_install'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_simulator) by extensions ['colcon_pkg']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_simulator) by extension 'colcon_pkg'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_simulator) by extensions ['colcon_meta']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_simulator) by extension 'colcon_meta'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_simulator) by extensions ['ros']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_simulator) by extension 'ros'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_simulator) by extensions ['cmake', 'python']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_simulator) by extension 'cmake'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_simulator) by extension 'python'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_simulator) by extensions ['python_setup_py']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_simulator) by extension 'python_setup_py'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_simulator/turtlebot4_ignition_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_simulator/turtlebot4_ignition_bringup) by extension 'ignore'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_simulator/turtlebot4_ignition_bringup) by extension 'ignore_ament_install'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_simulator/turtlebot4_ignition_bringup) by extensions ['colcon_pkg']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_simulator/turtlebot4_ignition_bringup) by extension 'colcon_pkg'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_simulator/turtlebot4_ignition_bringup) by extensions ['colcon_meta']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_simulator/turtlebot4_ignition_bringup) by extension 'colcon_meta'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_simulator/turtlebot4_ignition_bringup) by extensions ['ros']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_simulator/turtlebot4_ignition_bringup) by extension 'ros'
+[0.181s] DEBUG:colcon.colcon_core.package_identification:Package 'src/turtlebot4_simulator/turtlebot4_ignition_bringup' with type 'ros.ament_cmake' and name 'turtlebot4_ignition_bringup'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_simulator/turtlebot4_ignition_gui_plugins) by extensions ['ignore', 'ignore_ament_install']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_simulator/turtlebot4_ignition_gui_plugins) by extension 'ignore'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_simulator/turtlebot4_ignition_gui_plugins) by extension 'ignore_ament_install'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_simulator/turtlebot4_ignition_gui_plugins) by extensions ['colcon_pkg']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_simulator/turtlebot4_ignition_gui_plugins) by extension 'colcon_pkg'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_simulator/turtlebot4_ignition_gui_plugins) by extensions ['colcon_meta']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_simulator/turtlebot4_ignition_gui_plugins) by extension 'colcon_meta'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_simulator/turtlebot4_ignition_gui_plugins) by extensions ['ros']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_simulator/turtlebot4_ignition_gui_plugins) by extension 'ros'
+[0.182s] DEBUG:colcon.colcon_core.package_identification:Package 'src/turtlebot4_simulator/turtlebot4_ignition_gui_plugins' with type 'ros.ament_cmake' and name 'turtlebot4_ignition_gui_plugins'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_simulator/turtlebot4_ignition_toolbox) by extensions ['ignore', 'ignore_ament_install']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_simulator/turtlebot4_ignition_toolbox) by extension 'ignore'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_simulator/turtlebot4_ignition_toolbox) by extension 'ignore_ament_install'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_simulator/turtlebot4_ignition_toolbox) by extensions ['colcon_pkg']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_simulator/turtlebot4_ignition_toolbox) by extension 'colcon_pkg'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_simulator/turtlebot4_ignition_toolbox) by extensions ['colcon_meta']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_simulator/turtlebot4_ignition_toolbox) by extension 'colcon_meta'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_simulator/turtlebot4_ignition_toolbox) by extensions ['ros']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_simulator/turtlebot4_ignition_toolbox) by extension 'ros'
+[0.183s] DEBUG:colcon.colcon_core.package_identification:Package 'src/turtlebot4_simulator/turtlebot4_ignition_toolbox' with type 'ros.ament_cmake' and name 'turtlebot4_ignition_toolbox'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_simulator/turtlebot4_simulator) by extensions ['ignore', 'ignore_ament_install']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_simulator/turtlebot4_simulator) by extension 'ignore'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_simulator/turtlebot4_simulator) by extension 'ignore_ament_install'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_simulator/turtlebot4_simulator) by extensions ['colcon_pkg']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_simulator/turtlebot4_simulator) by extension 'colcon_pkg'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_simulator/turtlebot4_simulator) by extensions ['colcon_meta']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_simulator/turtlebot4_simulator) by extension 'colcon_meta'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_simulator/turtlebot4_simulator) by extensions ['ros']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_simulator/turtlebot4_simulator) by extension 'ros'
+[0.183s] DEBUG:colcon.colcon_core.package_identification:Package 'src/turtlebot4_simulator/turtlebot4_simulator' with type 'ros.ament_cmake' and name 'turtlebot4_simulator'
+[0.183s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.183s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.183s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.183s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.183s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.194s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.194s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.195s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 394 installed packages in /opt/ros/humble
+[0.196s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.218s] Level 5:colcon.colcon_core.verb:set package 'final_project_5335_jel' build argument 'cmake_args' from command line to 'None'
+[0.218s] Level 5:colcon.colcon_core.verb:set package 'final_project_5335_jel' build argument 'cmake_target' from command line to 'None'
+[0.218s] Level 5:colcon.colcon_core.verb:set package 'final_project_5335_jel' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.218s] Level 5:colcon.colcon_core.verb:set package 'final_project_5335_jel' build argument 'cmake_clean_cache' from command line to 'False'
+[0.218s] Level 5:colcon.colcon_core.verb:set package 'final_project_5335_jel' build argument 'cmake_clean_first' from command line to 'False'
+[0.218s] Level 5:colcon.colcon_core.verb:set package 'final_project_5335_jel' build argument 'cmake_force_configure' from command line to 'False'
+[0.218s] Level 5:colcon.colcon_core.verb:set package 'final_project_5335_jel' build argument 'ament_cmake_args' from command line to 'None'
+[0.218s] Level 5:colcon.colcon_core.verb:set package 'final_project_5335_jel' build argument 'catkin_cmake_args' from command line to 'None'
+[0.218s] Level 5:colcon.colcon_core.verb:set package 'final_project_5335_jel' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.218s] DEBUG:colcon.colcon_core.verb:Building package 'final_project_5335_jel' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/build/final_project_5335_jel', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/final_project_5335_jel', 'merge_install': False, 'path': '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/src/final_project_5335_jel', 'symlink_install': True, 'test_result_base': None}
+[0.218s] Level 5:colcon.colcon_core.verb:set package 'turtlebot4_ignition_gui_plugins' build argument 'cmake_args' from command line to 'None'
+[0.218s] Level 5:colcon.colcon_core.verb:set package 'turtlebot4_ignition_gui_plugins' build argument 'cmake_target' from command line to 'None'
+[0.218s] Level 5:colcon.colcon_core.verb:set package 'turtlebot4_ignition_gui_plugins' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.218s] Level 5:colcon.colcon_core.verb:set package 'turtlebot4_ignition_gui_plugins' build argument 'cmake_clean_cache' from command line to 'False'
+[0.218s] Level 5:colcon.colcon_core.verb:set package 'turtlebot4_ignition_gui_plugins' build argument 'cmake_clean_first' from command line to 'False'
+[0.218s] Level 5:colcon.colcon_core.verb:set package 'turtlebot4_ignition_gui_plugins' build argument 'cmake_force_configure' from command line to 'False'
+[0.218s] Level 5:colcon.colcon_core.verb:set package 'turtlebot4_ignition_gui_plugins' build argument 'ament_cmake_args' from command line to 'None'
+[0.218s] Level 5:colcon.colcon_core.verb:set package 'turtlebot4_ignition_gui_plugins' build argument 'catkin_cmake_args' from command line to 'None'
+[0.218s] Level 5:colcon.colcon_core.verb:set package 'turtlebot4_ignition_gui_plugins' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.218s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot4_ignition_gui_plugins' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/build/turtlebot4_ignition_gui_plugins', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins', 'merge_install': False, 'path': '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/src/turtlebot4_simulator/turtlebot4_ignition_gui_plugins', 'symlink_install': True, 'test_result_base': None}
+[0.218s] Level 5:colcon.colcon_core.verb:set package 'turtlebot4_ignition_toolbox' build argument 'cmake_args' from command line to 'None'
+[0.218s] Level 5:colcon.colcon_core.verb:set package 'turtlebot4_ignition_toolbox' build argument 'cmake_target' from command line to 'None'
+[0.218s] Level 5:colcon.colcon_core.verb:set package 'turtlebot4_ignition_toolbox' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.219s] Level 5:colcon.colcon_core.verb:set package 'turtlebot4_ignition_toolbox' build argument 'cmake_clean_cache' from command line to 'False'
+[0.219s] Level 5:colcon.colcon_core.verb:set package 'turtlebot4_ignition_toolbox' build argument 'cmake_clean_first' from command line to 'False'
+[0.219s] Level 5:colcon.colcon_core.verb:set package 'turtlebot4_ignition_toolbox' build argument 'cmake_force_configure' from command line to 'False'
+[0.219s] Level 5:colcon.colcon_core.verb:set package 'turtlebot4_ignition_toolbox' build argument 'ament_cmake_args' from command line to 'None'
+[0.219s] Level 5:colcon.colcon_core.verb:set package 'turtlebot4_ignition_toolbox' build argument 'catkin_cmake_args' from command line to 'None'
+[0.219s] Level 5:colcon.colcon_core.verb:set package 'turtlebot4_ignition_toolbox' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.219s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot4_ignition_toolbox' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/build/turtlebot4_ignition_toolbox', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_toolbox', 'merge_install': False, 'path': '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/src/turtlebot4_simulator/turtlebot4_ignition_toolbox', 'symlink_install': True, 'test_result_base': None}
+[0.219s] Level 5:colcon.colcon_core.verb:set package 'turtlebot4_ignition_bringup' build argument 'cmake_args' from command line to 'None'
+[0.219s] Level 5:colcon.colcon_core.verb:set package 'turtlebot4_ignition_bringup' build argument 'cmake_target' from command line to 'None'
+[0.219s] Level 5:colcon.colcon_core.verb:set package 'turtlebot4_ignition_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.219s] Level 5:colcon.colcon_core.verb:set package 'turtlebot4_ignition_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.219s] Level 5:colcon.colcon_core.verb:set package 'turtlebot4_ignition_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.219s] Level 5:colcon.colcon_core.verb:set package 'turtlebot4_ignition_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.219s] Level 5:colcon.colcon_core.verb:set package 'turtlebot4_ignition_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.219s] Level 5:colcon.colcon_core.verb:set package 'turtlebot4_ignition_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.219s] Level 5:colcon.colcon_core.verb:set package 'turtlebot4_ignition_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.219s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot4_ignition_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/build/turtlebot4_ignition_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_bringup', 'merge_install': False, 'path': '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/src/turtlebot4_simulator/turtlebot4_ignition_bringup', 'symlink_install': True, 'test_result_base': None}
+[0.219s] Level 5:colcon.colcon_core.verb:set package 'turtlebot4_simulator' build argument 'cmake_args' from command line to 'None'
+[0.219s] Level 5:colcon.colcon_core.verb:set package 'turtlebot4_simulator' build argument 'cmake_target' from command line to 'None'
+[0.219s] Level 5:colcon.colcon_core.verb:set package 'turtlebot4_simulator' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.219s] Level 5:colcon.colcon_core.verb:set package 'turtlebot4_simulator' build argument 'cmake_clean_cache' from command line to 'False'
+[0.219s] Level 5:colcon.colcon_core.verb:set package 'turtlebot4_simulator' build argument 'cmake_clean_first' from command line to 'False'
+[0.219s] Level 5:colcon.colcon_core.verb:set package 'turtlebot4_simulator' build argument 'cmake_force_configure' from command line to 'False'
+[0.219s] Level 5:colcon.colcon_core.verb:set package 'turtlebot4_simulator' build argument 'ament_cmake_args' from command line to 'None'
+[0.219s] Level 5:colcon.colcon_core.verb:set package 'turtlebot4_simulator' build argument 'catkin_cmake_args' from command line to 'None'
+[0.219s] Level 5:colcon.colcon_core.verb:set package 'turtlebot4_simulator' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.219s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot4_simulator' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/build/turtlebot4_simulator', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_simulator', 'merge_install': False, 'path': '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/src/turtlebot4_simulator/turtlebot4_simulator', 'symlink_install': True, 'test_result_base': None}
+[0.219s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.220s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.220s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/src/turtlebot4_simulator/turtlebot4_ignition_gui_plugins' with build type 'ament_cmake'
+[0.220s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/src/turtlebot4_simulator/turtlebot4_ignition_gui_plugins'
+[0.221s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.221s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.221s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.223s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/src/turtlebot4_simulator/turtlebot4_ignition_toolbox' with build type 'ament_cmake'
+[0.223s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/src/turtlebot4_simulator/turtlebot4_ignition_toolbox'
+[0.223s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.223s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.225s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/src/final_project_5335_jel' with build type 'ament_python'
+[0.225s] Level 1:colcon.colcon_core.shell:create_environment_hook('final_project_5335_jel', 'ament_prefix_path')
+[0.225s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/final_project_5335_jel/share/final_project_5335_jel/hook/ament_prefix_path.ps1'
+[0.225s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/final_project_5335_jel/share/final_project_5335_jel/hook/ament_prefix_path.dsv'
+[0.225s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/final_project_5335_jel/share/final_project_5335_jel/hook/ament_prefix_path.sh'
+[0.226s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.226s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.231s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/build/turtlebot4_ignition_gui_plugins': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/build/turtlebot4_ignition_gui_plugins -- -j16 -l16
+[0.234s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/build/turtlebot4_ignition_toolbox': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/build/turtlebot4_ignition_toolbox -- -j16 -l16
+[0.400s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/src/final_project_5335_jel'
+[0.400s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.400s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.403s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/build/turtlebot4_ignition_gui_plugins' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/build/turtlebot4_ignition_gui_plugins -- -j16 -l16
+[0.408s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/build/turtlebot4_ignition_gui_plugins': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/build/turtlebot4_ignition_gui_plugins
+[0.409s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/build/turtlebot4_ignition_toolbox' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/build/turtlebot4_ignition_toolbox -- -j16 -l16
+[0.410s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/build/turtlebot4_ignition_toolbox': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/build/turtlebot4_ignition_toolbox
+[0.420s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot4_ignition_gui_plugins)
+[0.420s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/build/turtlebot4_ignition_gui_plugins' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/build/turtlebot4_ignition_gui_plugins
+[0.421s] Level 1:colcon.colcon_core.environment:checking '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins' for CMake module files
+[0.422s] Level 1:colcon.colcon_core.environment:checking '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins' for CMake config files
+[0.422s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot4_ignition_gui_plugins', 'cmake_prefix_path')
+[0.422s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins/share/turtlebot4_ignition_gui_plugins/hook/cmake_prefix_path.ps1'
+[0.422s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins/share/turtlebot4_ignition_gui_plugins/hook/cmake_prefix_path.dsv'
+[0.423s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins/share/turtlebot4_ignition_gui_plugins/hook/cmake_prefix_path.sh'
+[0.423s] Level 1:colcon.colcon_core.environment:checking '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins/bin'
+[0.423s] Level 1:colcon.colcon_core.environment:checking '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins/lib/pkgconfig/turtlebot4_ignition_gui_plugins.pc'
+[0.423s] Level 1:colcon.colcon_core.environment:checking '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins/lib/python3.10/site-packages'
+[0.423s] Level 1:colcon.colcon_core.environment:checking '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins/bin'
+[0.423s] INFO:colcon.colcon_core.shell:Creating package script '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins/share/turtlebot4_ignition_gui_plugins/package.ps1'
+[0.424s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins/share/turtlebot4_ignition_gui_plugins/package.dsv'
+[0.424s] INFO:colcon.colcon_core.shell:Creating package script '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins/share/turtlebot4_ignition_gui_plugins/package.sh'
+[0.424s] INFO:colcon.colcon_core.shell:Creating package script '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins/share/turtlebot4_ignition_gui_plugins/package.bash'
+[0.425s] INFO:colcon.colcon_core.shell:Creating package script '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins/share/turtlebot4_ignition_gui_plugins/package.zsh'
+[0.425s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins/share/colcon-core/packages/turtlebot4_ignition_gui_plugins)
+[0.426s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot4_ignition_gui_plugins)
+[0.426s] Level 1:colcon.colcon_core.environment:checking '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins' for CMake module files
+[0.426s] Level 1:colcon.colcon_core.environment:checking '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins' for CMake config files
+[0.427s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot4_ignition_gui_plugins', 'cmake_prefix_path')
+[0.427s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins/share/turtlebot4_ignition_gui_plugins/hook/cmake_prefix_path.ps1'
+[0.427s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins/share/turtlebot4_ignition_gui_plugins/hook/cmake_prefix_path.dsv'
+[0.427s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins/share/turtlebot4_ignition_gui_plugins/hook/cmake_prefix_path.sh'
+[0.427s] Level 1:colcon.colcon_core.environment:checking '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins/bin'
+[0.427s] Level 1:colcon.colcon_core.environment:checking '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins/lib/pkgconfig/turtlebot4_ignition_gui_plugins.pc'
+[0.428s] Level 1:colcon.colcon_core.environment:checking '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins/lib/python3.10/site-packages'
+[0.428s] Level 1:colcon.colcon_core.environment:checking '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins/bin'
+[0.428s] INFO:colcon.colcon_core.shell:Creating package script '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins/share/turtlebot4_ignition_gui_plugins/package.ps1'
+[0.428s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins/share/turtlebot4_ignition_gui_plugins/package.dsv'
+[0.428s] INFO:colcon.colcon_core.shell:Creating package script '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins/share/turtlebot4_ignition_gui_plugins/package.sh'
+[0.429s] INFO:colcon.colcon_core.shell:Creating package script '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins/share/turtlebot4_ignition_gui_plugins/package.bash'
+[0.429s] INFO:colcon.colcon_core.shell:Creating package script '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins/share/turtlebot4_ignition_gui_plugins/package.zsh'
+[0.429s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins/share/colcon-core/packages/turtlebot4_ignition_gui_plugins)
+[0.430s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot4_ignition_toolbox)
+[0.430s] Level 1:colcon.colcon_core.environment:checking '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_toolbox' for CMake module files
+[0.430s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/build/turtlebot4_ignition_toolbox' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/build/turtlebot4_ignition_toolbox
+[0.430s] Level 1:colcon.colcon_core.environment:checking '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_toolbox' for CMake config files
+[0.430s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot4_ignition_toolbox', 'cmake_prefix_path')
+[0.430s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_toolbox/share/turtlebot4_ignition_toolbox/hook/cmake_prefix_path.ps1'
+[0.431s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_toolbox/share/turtlebot4_ignition_toolbox/hook/cmake_prefix_path.dsv'
+[0.431s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_toolbox/share/turtlebot4_ignition_toolbox/hook/cmake_prefix_path.sh'
+[0.431s] Level 1:colcon.colcon_core.environment:checking '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_toolbox/lib'
+[0.431s] Level 1:colcon.colcon_core.environment:checking '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_toolbox/bin'
+[0.431s] Level 1:colcon.colcon_core.environment:checking '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_toolbox/lib/pkgconfig/turtlebot4_ignition_toolbox.pc'
+[0.431s] Level 1:colcon.colcon_core.environment:checking '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_toolbox/lib/python3.10/site-packages'
+[0.432s] Level 1:colcon.colcon_core.environment:checking '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_toolbox/bin'
+[0.432s] INFO:colcon.colcon_core.shell:Creating package script '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_toolbox/share/turtlebot4_ignition_toolbox/package.ps1'
+[0.432s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_toolbox/share/turtlebot4_ignition_toolbox/package.dsv'
+[0.432s] INFO:colcon.colcon_core.shell:Creating package script '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_toolbox/share/turtlebot4_ignition_toolbox/package.sh'
+[0.432s] INFO:colcon.colcon_core.shell:Creating package script '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_toolbox/share/turtlebot4_ignition_toolbox/package.bash'
+[0.433s] INFO:colcon.colcon_core.shell:Creating package script '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_toolbox/share/turtlebot4_ignition_toolbox/package.zsh'
+[0.433s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_toolbox/share/colcon-core/packages/turtlebot4_ignition_toolbox)
+[0.433s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot4_ignition_toolbox)
+[0.433s] Level 1:colcon.colcon_core.environment:checking '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_toolbox' for CMake module files
+[0.433s] Level 1:colcon.colcon_core.environment:checking '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_toolbox' for CMake config files
+[0.433s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot4_ignition_toolbox', 'cmake_prefix_path')
+[0.434s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_toolbox/share/turtlebot4_ignition_toolbox/hook/cmake_prefix_path.ps1'
+[0.434s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_toolbox/share/turtlebot4_ignition_toolbox/hook/cmake_prefix_path.dsv'
+[0.434s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_toolbox/share/turtlebot4_ignition_toolbox/hook/cmake_prefix_path.sh'
+[0.434s] Level 1:colcon.colcon_core.environment:checking '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_toolbox/lib'
+[0.434s] Level 1:colcon.colcon_core.environment:checking '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_toolbox/bin'
+[0.434s] Level 1:colcon.colcon_core.environment:checking '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_toolbox/lib/pkgconfig/turtlebot4_ignition_toolbox.pc'
+[0.434s] Level 1:colcon.colcon_core.environment:checking '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_toolbox/lib/python3.10/site-packages'
+[0.434s] Level 1:colcon.colcon_core.environment:checking '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_toolbox/bin'
+[0.435s] INFO:colcon.colcon_core.shell:Creating package script '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_toolbox/share/turtlebot4_ignition_toolbox/package.ps1'
+[0.435s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_toolbox/share/turtlebot4_ignition_toolbox/package.dsv'
+[0.435s] INFO:colcon.colcon_core.shell:Creating package script '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_toolbox/share/turtlebot4_ignition_toolbox/package.sh'
+[0.435s] INFO:colcon.colcon_core.shell:Creating package script '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_toolbox/share/turtlebot4_ignition_toolbox/package.bash'
+[0.435s] INFO:colcon.colcon_core.shell:Creating package script '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_toolbox/share/turtlebot4_ignition_toolbox/package.zsh'
+[0.436s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_toolbox/share/colcon-core/packages/turtlebot4_ignition_toolbox)
+[0.436s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/src/turtlebot4_simulator/turtlebot4_ignition_bringup' with build type 'ament_cmake'
+[0.436s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/src/turtlebot4_simulator/turtlebot4_ignition_bringup'
+[0.436s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.436s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.442s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/build/turtlebot4_ignition_bringup': AMENT_PREFIX_PATH=/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_toolbox:/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_toolbox:/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/build/turtlebot4_ignition_bringup -- -j16 -l16
+[0.467s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/build/turtlebot4_ignition_bringup' returned '0': AMENT_PREFIX_PATH=/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_toolbox:/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_toolbox:/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/build/turtlebot4_ignition_bringup -- -j16 -l16
+[0.468s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/build/turtlebot4_ignition_bringup': AMENT_PREFIX_PATH=/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_toolbox:/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_toolbox:/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/build/turtlebot4_ignition_bringup
+[0.479s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot4_ignition_bringup)
+[0.480s] Level 1:colcon.colcon_core.environment:checking '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_bringup' for CMake module files
+[0.480s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/build/turtlebot4_ignition_bringup' returned '0': AMENT_PREFIX_PATH=/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_toolbox:/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_toolbox:/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/build/turtlebot4_ignition_bringup
+[0.480s] Level 1:colcon.colcon_core.environment:checking '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_bringup' for CMake config files
+[0.480s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot4_ignition_bringup', 'cmake_prefix_path')
+[0.480s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_bringup/share/turtlebot4_ignition_bringup/hook/cmake_prefix_path.ps1'
+[0.481s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_bringup/share/turtlebot4_ignition_bringup/hook/cmake_prefix_path.dsv'
+[0.481s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_bringup/share/turtlebot4_ignition_bringup/hook/cmake_prefix_path.sh'
+[0.481s] Level 1:colcon.colcon_core.environment:checking '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_bringup/bin'
+[0.481s] Level 1:colcon.colcon_core.environment:checking '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_bringup/lib/pkgconfig/turtlebot4_ignition_bringup.pc'
+[0.481s] Level 1:colcon.colcon_core.environment:checking '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_bringup/lib/python3.10/site-packages'
+[0.481s] Level 1:colcon.colcon_core.environment:checking '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_bringup/bin'
+[0.482s] INFO:colcon.colcon_core.shell:Creating package script '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_bringup/share/turtlebot4_ignition_bringup/package.ps1'
+[0.482s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_bringup/share/turtlebot4_ignition_bringup/package.dsv'
+[0.482s] INFO:colcon.colcon_core.shell:Creating package script '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_bringup/share/turtlebot4_ignition_bringup/package.sh'
+[0.482s] INFO:colcon.colcon_core.shell:Creating package script '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_bringup/share/turtlebot4_ignition_bringup/package.bash'
+[0.482s] INFO:colcon.colcon_core.shell:Creating package script '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_bringup/share/turtlebot4_ignition_bringup/package.zsh'
+[0.482s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_bringup/share/colcon-core/packages/turtlebot4_ignition_bringup)
+[0.483s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot4_ignition_bringup)
+[0.483s] Level 1:colcon.colcon_core.environment:checking '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_bringup' for CMake module files
+[0.483s] Level 1:colcon.colcon_core.environment:checking '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_bringup' for CMake config files
+[0.483s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot4_ignition_bringup', 'cmake_prefix_path')
+[0.483s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_bringup/share/turtlebot4_ignition_bringup/hook/cmake_prefix_path.ps1'
+[0.484s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_bringup/share/turtlebot4_ignition_bringup/hook/cmake_prefix_path.dsv'
+[0.484s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_bringup/share/turtlebot4_ignition_bringup/hook/cmake_prefix_path.sh'
+[0.484s] Level 1:colcon.colcon_core.environment:checking '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_bringup/bin'
+[0.484s] Level 1:colcon.colcon_core.environment:checking '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_bringup/lib/pkgconfig/turtlebot4_ignition_bringup.pc'
+[0.484s] Level 1:colcon.colcon_core.environment:checking '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_bringup/lib/python3.10/site-packages'
+[0.484s] Level 1:colcon.colcon_core.environment:checking '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_bringup/bin'
+[0.485s] INFO:colcon.colcon_core.shell:Creating package script '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_bringup/share/turtlebot4_ignition_bringup/package.ps1'
+[0.485s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_bringup/share/turtlebot4_ignition_bringup/package.dsv'
+[0.485s] INFO:colcon.colcon_core.shell:Creating package script '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_bringup/share/turtlebot4_ignition_bringup/package.sh'
+[0.485s] INFO:colcon.colcon_core.shell:Creating package script '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_bringup/share/turtlebot4_ignition_bringup/package.bash'
+[0.485s] INFO:colcon.colcon_core.shell:Creating package script '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_bringup/share/turtlebot4_ignition_bringup/package.zsh'
+[0.486s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_bringup/share/colcon-core/packages/turtlebot4_ignition_bringup)
+[0.486s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/src/turtlebot4_simulator/turtlebot4_simulator' with build type 'ament_cmake'
+[0.486s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/src/turtlebot4_simulator/turtlebot4_simulator'
+[0.486s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.486s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.492s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/build/turtlebot4_simulator': AMENT_PREFIX_PATH=/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_bringup:/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_toolbox:/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_bringup:/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_toolbox:/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/build/turtlebot4_simulator -- -j16 -l16
+[0.521s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/build/turtlebot4_simulator' returned '0': AMENT_PREFIX_PATH=/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_bringup:/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_toolbox:/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_bringup:/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_toolbox:/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/build/turtlebot4_simulator -- -j16 -l16
+[0.523s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/build/turtlebot4_simulator': AMENT_PREFIX_PATH=/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_bringup:/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_toolbox:/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_bringup:/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_toolbox:/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/build/turtlebot4_simulator
+[0.535s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot4_simulator)
+[0.535s] Level 1:colcon.colcon_core.environment:checking '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_simulator' for CMake module files
+[0.536s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/build/turtlebot4_simulator' returned '0': AMENT_PREFIX_PATH=/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_bringup:/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_toolbox:/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_bringup:/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_toolbox:/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/build/turtlebot4_simulator
+[0.536s] Level 1:colcon.colcon_core.environment:checking '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_simulator' for CMake config files
+[0.536s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot4_simulator', 'cmake_prefix_path')
+[0.536s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_simulator/share/turtlebot4_simulator/hook/cmake_prefix_path.ps1'
+[0.537s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_simulator/share/turtlebot4_simulator/hook/cmake_prefix_path.dsv'
+[0.537s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_simulator/share/turtlebot4_simulator/hook/cmake_prefix_path.sh'
+[0.537s] Level 1:colcon.colcon_core.environment:checking '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_simulator/bin'
+[0.537s] Level 1:colcon.colcon_core.environment:checking '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_simulator/lib/pkgconfig/turtlebot4_simulator.pc'
+[0.537s] Level 1:colcon.colcon_core.environment:checking '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_simulator/lib/python3.10/site-packages'
+[0.538s] Level 1:colcon.colcon_core.environment:checking '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_simulator/bin'
+[0.538s] INFO:colcon.colcon_core.shell:Creating package script '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_simulator/share/turtlebot4_simulator/package.ps1'
+[0.538s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_simulator/share/turtlebot4_simulator/package.dsv'
+[0.538s] INFO:colcon.colcon_core.shell:Creating package script '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_simulator/share/turtlebot4_simulator/package.sh'
+[0.538s] INFO:colcon.colcon_core.shell:Creating package script '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_simulator/share/turtlebot4_simulator/package.bash'
+[0.539s] INFO:colcon.colcon_core.shell:Creating package script '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_simulator/share/turtlebot4_simulator/package.zsh'
+[0.539s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_simulator/share/colcon-core/packages/turtlebot4_simulator)
+[0.539s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot4_simulator)
+[0.539s] Level 1:colcon.colcon_core.environment:checking '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_simulator' for CMake module files
+[0.539s] Level 1:colcon.colcon_core.environment:checking '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_simulator' for CMake config files
+[0.539s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot4_simulator', 'cmake_prefix_path')
+[0.540s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_simulator/share/turtlebot4_simulator/hook/cmake_prefix_path.ps1'
+[0.540s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_simulator/share/turtlebot4_simulator/hook/cmake_prefix_path.dsv'
+[0.540s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_simulator/share/turtlebot4_simulator/hook/cmake_prefix_path.sh'
+[0.540s] Level 1:colcon.colcon_core.environment:checking '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_simulator/bin'
+[0.540s] Level 1:colcon.colcon_core.environment:checking '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_simulator/lib/pkgconfig/turtlebot4_simulator.pc'
+[0.540s] Level 1:colcon.colcon_core.environment:checking '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_simulator/lib/python3.10/site-packages'
+[0.540s] Level 1:colcon.colcon_core.environment:checking '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_simulator/bin'
+[0.541s] INFO:colcon.colcon_core.shell:Creating package script '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_simulator/share/turtlebot4_simulator/package.ps1'
+[0.541s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_simulator/share/turtlebot4_simulator/package.dsv'
+[0.541s] INFO:colcon.colcon_core.shell:Creating package script '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_simulator/share/turtlebot4_simulator/package.sh'
+[0.541s] INFO:colcon.colcon_core.shell:Creating package script '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_simulator/share/turtlebot4_simulator/package.bash'
+[0.541s] INFO:colcon.colcon_core.shell:Creating package script '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_simulator/share/turtlebot4_simulator/package.zsh'
+[0.542s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_simulator/share/colcon-core/packages/turtlebot4_simulator)
+[0.639s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/build/final_project_5335_jel': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/build/final_project_5335_jel/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/final_project_5335_jel/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/build/final_project_5335_jel/build --no-deps symlink_data
+[0.939s] Level 1:colcon.colcon_core.shell:create_environment_hook('final_project_5335_jel', 'pythonpath_develop')
+[0.940s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/build/final_project_5335_jel/share/final_project_5335_jel/hook/pythonpath_develop.ps1'
+[0.940s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/build/final_project_5335_jel' returned '0': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/build/final_project_5335_jel/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/final_project_5335_jel/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/build/final_project_5335_jel/build --no-deps symlink_data
+[0.940s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/build/final_project_5335_jel/share/final_project_5335_jel/hook/pythonpath_develop.dsv'
+[0.940s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/build/final_project_5335_jel/share/final_project_5335_jel/hook/pythonpath_develop.sh'
+[0.941s] Level 1:colcon.colcon_core.environment:checking '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/final_project_5335_jel' for CMake module files
+[0.941s] Level 1:colcon.colcon_core.environment:checking '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/final_project_5335_jel' for CMake config files
+[0.941s] Level 1:colcon.colcon_core.environment:checking '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/final_project_5335_jel/lib'
+[0.941s] Level 1:colcon.colcon_core.environment:checking '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/final_project_5335_jel/bin'
+[0.941s] Level 1:colcon.colcon_core.environment:checking '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/final_project_5335_jel/lib/pkgconfig/final_project_5335_jel.pc'
+[0.941s] Level 1:colcon.colcon_core.environment:checking '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/final_project_5335_jel/lib/python3.10/site-packages'
+[0.941s] Level 1:colcon.colcon_core.shell:create_environment_hook('final_project_5335_jel', 'pythonpath')
+[0.942s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/final_project_5335_jel/share/final_project_5335_jel/hook/pythonpath.ps1'
+[0.942s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/final_project_5335_jel/share/final_project_5335_jel/hook/pythonpath.dsv'
+[0.942s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/final_project_5335_jel/share/final_project_5335_jel/hook/pythonpath.sh'
+[0.942s] Level 1:colcon.colcon_core.environment:checking '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/final_project_5335_jel/bin'
+[0.942s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(final_project_5335_jel)
+[0.943s] INFO:colcon.colcon_core.shell:Creating package script '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/final_project_5335_jel/share/final_project_5335_jel/package.ps1'
+[0.943s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/final_project_5335_jel/share/final_project_5335_jel/package.dsv'
+[0.943s] INFO:colcon.colcon_core.shell:Creating package script '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/final_project_5335_jel/share/final_project_5335_jel/package.sh'
+[0.943s] INFO:colcon.colcon_core.shell:Creating package script '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/final_project_5335_jel/share/final_project_5335_jel/package.bash'
+[0.943s] INFO:colcon.colcon_core.shell:Creating package script '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/final_project_5335_jel/share/final_project_5335_jel/package.zsh'
+[0.943s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/final_project_5335_jel/share/colcon-core/packages/final_project_5335_jel)
+[0.944s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[0.944s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[0.944s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[0.944s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[0.947s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[0.947s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[0.947s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[0.953s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[0.954s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/local_setup.ps1'
+[0.954s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/_local_setup_util_ps1.py'
+[0.955s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/setup.ps1'
+[0.956s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/local_setup.sh'
+[0.956s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/_local_setup_util_sh.py'
+[0.956s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/setup.sh'
+[0.957s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/local_setup.bash'
+[0.957s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/setup.bash'
+[0.957s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/local_setup.zsh'
+[0.958s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/setup.zsh'

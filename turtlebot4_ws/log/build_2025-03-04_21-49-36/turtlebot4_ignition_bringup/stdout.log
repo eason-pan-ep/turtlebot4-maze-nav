@@ -1,0 +1,28 @@
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_bringup/share/turtlebot4_ignition_bringup/config/turtlebot4_node.yaml
+-- Symlinking: /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_bringup/share/turtlebot4_ignition_bringup/gui/lite/gui.config
+-- Symlinking: /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_bringup/share/turtlebot4_ignition_bringup/gui/standard/gui.config
+-- Symlinking: /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_bringup/share/turtlebot4_ignition_bringup/launch/ignition.launch.py
+-- Symlinking: /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_bringup/share/turtlebot4_ignition_bringup/launch/ros_ign_bridge.launch.py
+-- Symlinking: /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_bringup/share/turtlebot4_ignition_bringup/launch/turtlebot4_ignition.launch.py
+-- Symlinking: /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_bringup/share/turtlebot4_ignition_bringup/launch/turtlebot4_nodes.launch.py
+-- Symlinking: /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_bringup/share/turtlebot4_ignition_bringup/launch/turtlebot4_spawn.launch.py
+-- Symlinking: /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_bringup/share/turtlebot4_ignition_bringup/worlds/depot.sdf
+-- Symlinking: /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_bringup/share/turtlebot4_ignition_bringup/worlds/maze.sdf
+-- Symlinking: /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_bringup/share/turtlebot4_ignition_bringup/worlds/warehouse.sdf
+-- Symlinking: /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_bringup/share/ament_index/resource_index/package_run_dependencies/turtlebot4_ignition_bringup
+-- Symlinking: /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_bringup/share/ament_index/resource_index/parent_prefix_path/turtlebot4_ignition_bringup
+-- Symlinking: /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_bringup/share/turtlebot4_ignition_bringup/environment/ament_prefix_path.sh
+-- Symlinking: /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_bringup/share/turtlebot4_ignition_bringup/environment/ament_prefix_path.dsv
+-- Symlinking: /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_bringup/share/turtlebot4_ignition_bringup/environment/path.sh
+-- Symlinking: /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_bringup/share/turtlebot4_ignition_bringup/environment/path.dsv
+-- Symlinking: /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_bringup/share/turtlebot4_ignition_bringup/local_setup.bash
+-- Symlinking: /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_bringup/share/turtlebot4_ignition_bringup/local_setup.sh
+-- Symlinking: /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_bringup/share/turtlebot4_ignition_bringup/local_setup.zsh
+-- Symlinking: /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_bringup/share/turtlebot4_ignition_bringup/local_setup.dsv
+-- Symlinking: /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_bringup/share/turtlebot4_ignition_bringup/package.dsv
+-- Symlinking: /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_bringup/share/ament_index/resource_index/packages/turtlebot4_ignition_bringup
+-- Symlinking: /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_bringup/share/turtlebot4_ignition_bringup/cmake/turtlebot4_ignition_bringupConfig.cmake
+-- Symlinking: /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_bringup/share/turtlebot4_ignition_bringup/cmake/turtlebot4_ignition_bringupConfig-version.cmake
+-- Symlinking: /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_bringup/share/turtlebot4_ignition_bringup/package.xml
