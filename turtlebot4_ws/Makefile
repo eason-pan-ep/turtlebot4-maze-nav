@@ -1,8 +1,8 @@
 
 build:
 	@echo "Building the turtlebot4 simulation"
-	bash -c "source /opt/ros/humble/setup.bash" &&\
-	colcon build --symlink-install
+	bash -c "source /opt/ros/humble/setup.bash &&\
+	colcon build --symlink-install"
 
 run:
 	@echo "Running the turtlebot4 simulation with custom maze world and scanned map"
