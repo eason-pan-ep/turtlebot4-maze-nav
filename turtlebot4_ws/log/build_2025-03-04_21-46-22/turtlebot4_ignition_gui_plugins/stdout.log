@@ -1,0 +1,21 @@
+[ 16%] [34m[1mAutomatic MOC for target Turtlebot4Hmi[0m
+[ 16%] Built target Turtlebot4Hmi_autogen
+[100%] Built target Turtlebot4Hmi
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins/share/turtlebot4_ignition_gui_plugins/lib/libTurtlebot4Hmi.so
+-- Symlinking: /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins/share/ament_index/resource_index/package_run_dependencies/turtlebot4_ignition_gui_plugins
+-- Symlinking: /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins/share/ament_index/resource_index/parent_prefix_path/turtlebot4_ignition_gui_plugins
+-- Symlinking: /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins/share/turtlebot4_ignition_gui_plugins/environment/ament_prefix_path.sh
+-- Symlinking: /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins/share/turtlebot4_ignition_gui_plugins/environment/ament_prefix_path.dsv
+-- Symlinking: /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins/share/turtlebot4_ignition_gui_plugins/environment/path.sh
+-- Symlinking: /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins/share/turtlebot4_ignition_gui_plugins/environment/path.dsv
+-- Symlinking: /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins/share/turtlebot4_ignition_gui_plugins/local_setup.bash
+-- Symlinking: /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins/share/turtlebot4_ignition_gui_plugins/local_setup.sh
+-- Symlinking: /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins/share/turtlebot4_ignition_gui_plugins/local_setup.zsh
+-- Symlinking: /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins/share/turtlebot4_ignition_gui_plugins/local_setup.dsv
+-- Symlinking: /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins/share/turtlebot4_ignition_gui_plugins/package.dsv
+-- Symlinking: /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins/share/ament_index/resource_index/packages/turtlebot4_ignition_gui_plugins
+-- Symlinking: /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins/share/turtlebot4_ignition_gui_plugins/cmake/turtlebot4_ignition_gui_pluginsConfig.cmake
+-- Symlinking: /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins/share/turtlebot4_ignition_gui_plugins/cmake/turtlebot4_ignition_gui_pluginsConfig-version.cmake
+-- Symlinking: /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins/share/turtlebot4_ignition_gui_plugins/package.xml

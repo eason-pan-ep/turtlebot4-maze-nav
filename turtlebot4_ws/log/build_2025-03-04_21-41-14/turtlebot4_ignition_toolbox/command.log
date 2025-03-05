@@ -1,0 +1,1 @@
+Invoking command in '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/build/turtlebot4_ignition_toolbox': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/build/turtlebot4_ignition_toolbox -- -j16 -l16

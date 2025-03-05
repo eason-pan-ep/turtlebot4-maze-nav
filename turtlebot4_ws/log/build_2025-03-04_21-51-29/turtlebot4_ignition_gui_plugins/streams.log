@@ -1,0 +1,25 @@
+[0.011s] Invoking command in '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/build/turtlebot4_ignition_gui_plugins': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/build/turtlebot4_ignition_gui_plugins -- -j16 -l16
+[0.044s] [ 16%] [34m[1mAutomatic MOC for target Turtlebot4Hmi[0m
+[0.059s] [ 16%] Built target Turtlebot4Hmi_autogen
+[0.079s] [100%] Built target Turtlebot4Hmi
+[0.189s] Invoked command in '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/build/turtlebot4_ignition_gui_plugins' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/build/turtlebot4_ignition_gui_plugins -- -j16 -l16
+[0.190s] Invoking command in '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/build/turtlebot4_ignition_gui_plugins': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/build/turtlebot4_ignition_gui_plugins
+[0.194s] -- Install configuration: ""
+[0.195s] -- Execute custom install script
+[0.195s] -- Up-to-date symlink: /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins/share/turtlebot4_ignition_gui_plugins/lib/libTurtlebot4Hmi.so
+[0.195s] -- Up-to-date symlink: /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins/share/ament_index/resource_index/package_run_dependencies/turtlebot4_ignition_gui_plugins
+[0.195s] -- Up-to-date symlink: /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins/share/ament_index/resource_index/parent_prefix_path/turtlebot4_ignition_gui_plugins
+[0.195s] -- Up-to-date symlink: /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins/share/turtlebot4_ignition_gui_plugins/environment/ament_prefix_path.sh
+[0.195s] -- Up-to-date symlink: /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins/share/turtlebot4_ignition_gui_plugins/environment/ament_prefix_path.dsv
+[0.195s] -- Up-to-date symlink: /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins/share/turtlebot4_ignition_gui_plugins/environment/path.sh
+[0.195s] -- Up-to-date symlink: /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins/share/turtlebot4_ignition_gui_plugins/environment/path.dsv
+[0.195s] -- Up-to-date symlink: /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins/share/turtlebot4_ignition_gui_plugins/local_setup.bash
+[0.195s] -- Up-to-date symlink: /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins/share/turtlebot4_ignition_gui_plugins/local_setup.sh
+[0.196s] -- Up-to-date symlink: /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins/share/turtlebot4_ignition_gui_plugins/local_setup.zsh
+[0.196s] -- Up-to-date symlink: /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins/share/turtlebot4_ignition_gui_plugins/local_setup.dsv
+[0.196s] -- Symlinking: /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins/share/turtlebot4_ignition_gui_plugins/package.dsv
+[0.201s] -- Up-to-date symlink: /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins/share/ament_index/resource_index/packages/turtlebot4_ignition_gui_plugins
+[0.201s] -- Up-to-date symlink: /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins/share/turtlebot4_ignition_gui_plugins/cmake/turtlebot4_ignition_gui_pluginsConfig.cmake
+[0.201s] -- Up-to-date symlink: /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins/share/turtlebot4_ignition_gui_plugins/cmake/turtlebot4_ignition_gui_pluginsConfig-version.cmake
+[0.201s] -- Up-to-date symlink: /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins/share/turtlebot4_ignition_gui_plugins/package.xml
+[0.213s] Invoked command in '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/build/turtlebot4_ignition_gui_plugins' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/build/turtlebot4_ignition_gui_plugins
