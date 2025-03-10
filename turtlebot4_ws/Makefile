@@ -1,10 +1,10 @@
 
-build:
+build-pack:
 	@echo "Building the turtlebot4 simulation"
 	bash -c "source /opt/ros/humble/setup.bash &&\
 	colcon build --symlink-install"
 
-run:
+run-sim:
 	@echo "Running the turtlebot4 simulation with custom maze world and scanned map"
 	@echo "Ctrl+C to stop the simulation\n"
 	bash -c "source install/setup.bash && \
