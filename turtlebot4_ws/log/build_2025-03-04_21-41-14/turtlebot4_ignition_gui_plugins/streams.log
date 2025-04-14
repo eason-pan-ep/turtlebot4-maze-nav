@@ -1,9 +1,0 @@
-[0.011s] Invoking command in '/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/build/turtlebot4_ignition_gui_plugins': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/build/turtlebot4_ignition_gui_plugins -- -j16 -l16
-[0.043s] [ 16%] [34m[1mAutomatic MOC for target Turtlebot4Hmi[0m
-[0.991s] [ 16%] Built target Turtlebot4Hmi_autogen
-[0.999s] [ 33%] [34m[1mGenerating qrc_Turtlebot4Hmi.cpp[0m
-[1.018s] [ 66%] [32mBuilding CXX object Turtlebot4Hmi/CMakeFiles/Turtlebot4Hmi.dir/qrc_Turtlebot4Hmi.cpp.o[0m
-[1.018s] [ 66%] [32mBuilding CXX object Turtlebot4Hmi/CMakeFiles/Turtlebot4Hmi.dir/Turtlebot4Hmi_autogen/mocs_compilation.cpp.o[0m
-[1.019s] [ 83%] [32mBuilding CXX object Turtlebot4Hmi/CMakeFiles/Turtlebot4Hmi.dir/Turtlebot4Hmi.cc.o[0m
-[5.392s] [100%] [32m[1mLinking CXX shared library libTurtlebot4Hmi.so[0m
-[5.646s] [100%] Built target Turtlebot4Hmi

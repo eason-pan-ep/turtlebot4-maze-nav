@@ -1,8 +1,0 @@
-[ 16%] [34m[1mAutomatic MOC for target Turtlebot4Hmi[0m
-[ 16%] Built target Turtlebot4Hmi_autogen
-[ 33%] [34m[1mGenerating qrc_Turtlebot4Hmi.cpp[0m
-[ 66%] [32mBuilding CXX object Turtlebot4Hmi/CMakeFiles/Turtlebot4Hmi.dir/qrc_Turtlebot4Hmi.cpp.o[0m
-[ 66%] [32mBuilding CXX object Turtlebot4Hmi/CMakeFiles/Turtlebot4Hmi.dir/Turtlebot4Hmi_autogen/mocs_compilation.cpp.o[0m
-[ 83%] [32mBuilding CXX object Turtlebot4Hmi/CMakeFiles/Turtlebot4Hmi.dir/Turtlebot4Hmi.cc.o[0m
-[100%] [32m[1mLinking CXX shared library libTurtlebot4Hmi.so[0m
-[100%] Built target Turtlebot4Hmi
