@@ -7,21 +7,42 @@
   <maintainer email="eason.pan@proton.me">Eason</maintainer>
   <maintainer email="gill.jag@northeastern.edu">Jeevin</maintainer>
   <maintainer email="liu.fangq@northeastern.edu">Leo</maintainer>
-
   <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_python</buildtool_depend>
+
+  <depend>rclpy</depend>
+  <depend>geometry_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>nav2_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>std_msgs</depend>
+  <depend>rcl_interfaces</depend>
+  <depend>visualization_msgs</depend>
+  <depend>tf2_ros</depend>
+  <depend>tf_transformations</depend>
+
+  <exec_depend>nav2_bringup</exec_depend>
+  <exec_depend>turtlebot4_simulator</exec_depend>
+  <exec_depend>rviz2</exec_depend>
+  <exec_depend>python3-numpy</exec_depend>
+  <exec_depend>python3-transforms3d</exec_depend>
 
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>
   <test_depend>ament_pep257</test_depend>
   <test_depend>python3-pytest</test_depend>
 
-  <depend>rclpy</depend>
-  <depend>rcl_interfaces</depend>
-  <depend>turtlebot4_ignition_bringup</depend>
-  <depend>turtlebot4_navigation</depend>
-  <depend>nav2_msgs</depend>
-
   <export>
     <build_type>ament_python</build_type>
-  </export>
+    <data_files>
+        <data path="config">
+          <file>config/nav2_params.yaml</file>
+        </data>
+        <data path="launch">
+          <file>launch/obstacle_navigation.launch.py</file>
+          <file>launch/safety_params.launch.py</file>
+        </data>
+      </data_files>
+    </export>
 </package>
