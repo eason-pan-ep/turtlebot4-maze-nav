@@ -9,8 +9,8 @@ run-sim-boxes:
 	@echo "Ctrl+C to stop the simulation\n"
 	bash -c "source install/setup.bash && \
 	ros2 launch turtlebot4_ignition_bringup turtlebot4_ignition.launch.py \
-	world:=lab211_with_boxes_s_1 \
-	map:=/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/maps/lab211_with_boxes.yaml \
+	world:=lab211_with_boxes_1 \
+	map:=/home/eason-pan/Documents/Gits/5335-final-project/turtlebot4_ws/maps/lab211_with_boxes_n.yaml \
 	model:=lite \
 	nav2:=true \
 	rviz:=true \
@@ -35,11 +35,11 @@ run-mapping:
 	@echo "Ctrl+C to stop the simulation\n"
 	bash -c "source install/setup.bash && \
 	ros2 launch turtlebot4_ignition_bringup turtlebot4_ignition.launch.py \
-	world:=lab211_with_boxes_s_1 \
+	world:=lab211_with_boxes_1 \
 	model:=lite \
+	slam:=true \
 	nav2:=false \
 	rviz:=true \
-	slam:=true \
 	localization:=false"
 
 launch-node-adj:
