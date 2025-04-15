@@ -1,0 +1,185 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <world name="default">
+    <!-- A global light source -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    
+    <!-- A ground plane -->
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+    
+    <!-- Room from map -->
+    <model name="room_model">
+      <static>true</static>
+      <link name="walls_link">
+
+        <collision name="north_wall_collision">
+          <pose>1.0700000000000003 3.160000000000001 1.25 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>13.5 0.2 2.5</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="north_wall_visual">
+          <pose>1.0700000000000003 3.160000000000001 1.25 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>13.5 0.2 2.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <n>Gazebo/White</n>
+            </script>
+          </material>
+        </visual>
+        
+        <!-- South wall -->
+        <collision name="south_wall_collision">
+          <pose>1.0700000000000003 -6.79 1.25 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>13.5 0.2 2.5</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="south_wall_visual">
+          <pose>1.0700000000000003 -6.79 1.25 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>13.5 0.2 2.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <n>Gazebo/White</n>
+            </script>
+          </material>
+        </visual>
+        
+        <!-- East wall -->
+        <collision name="east_wall_collision">
+          <pose>7.720000000000001 -1.8149999999999995 1.25 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.2 9.950000000000001 2.5</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="east_wall_visual">
+          <pose>7.720000000000001 -1.8149999999999995 1.25 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.2 9.950000000000001 2.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <n>Gazebo/White</n>
+            </script>
+          </material>
+        </visual>
+        
+        <!-- West wall -->
+        <collision name="west_wall_collision">
+          <pose>-5.58 -1.8149999999999995 1.25 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.2 9.950000000000001 2.5</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="west_wall_visual">
+          <pose>-5.58 -1.8149999999999995 1.25 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.2 9.950000000000001 2.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <n>Gazebo/White</n>
+            </script>
+          </material>
+        </visual>
+        <!-- Obstacle 1 -->
+        <collision name="obstacle_1_collision">
+          <pose>-1.13 8.41 1.25 0 0 1.5422312898551092</pose>
+          <geometry>
+            <box>
+              <size>0.7311302185058595 7.499796295166016 2.5</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="obstacle_1_visual">
+          <pose>-1.13 8.41 1.25 0 0 1.5422312898551092</pose>
+          <geometry>
+            <box>
+              <size>0.7311302185058595 7.499796295166016 2.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <n>Gazebo/Grey</n>
+            </script>
+          </material>
+        </visual>
+        <!-- Obstacle 2 -->
+        <collision name="obstacle_2_collision">
+          <pose>5.570000000000001 7.660000000000001 1.25 0 0 1.4677133091782464</pose>
+          <geometry>
+            <box>
+              <size>0.7322988986968995 2.478154563903809 2.5</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="obstacle_2_visual">
+          <pose>5.570000000000001 7.660000000000001 1.25 0 0 1.4677133091782464</pose>
+          <geometry>
+            <box>
+              <size>0.7322988986968995 2.478154563903809 2.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <n>Gazebo/Grey</n>
+            </script>
+          </material>
+        </visual>
+        <!-- Obstacle 3 -->
+        <collision name="obstacle_3_collision">
+          <pose>-2.7800000000000002 1.71 1.25 0 0 0.3701705234460831</pose>
+          <geometry>
+            <box>
+              <size>1.0331449508666992 3.932907867431641 2.5</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="obstacle_3_visual">
+          <pose>-2.7800000000000002 1.71 1.25 0 0 0.3701705234460831</pose>
+          <geometry>
+            <box>
+              <size>1.0331449508666992 3.932907867431641 2.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <n>Gazebo/Grey</n>
+            </script>
+          </material>
+        </visual>
+      </link>
+    </model>
+  </world>
+</sdf>

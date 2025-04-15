@@ -1,7 +1,0 @@
-[ 20%] [32mBuilding CXX object CMakeFiles/turtlebot4_ignition_toolbox_lib.dir/src/hmi_main.cpp.o[0m
-[ 40%] [32mBuilding CXX object CMakeFiles/turtlebot4_ignition_toolbox_lib.dir/src/hmi_node.cpp.o[0m
-[ 60%] [32m[1mLinking CXX static library libturtlebot4_ignition_toolbox_lib.a[0m
-[ 60%] Built target turtlebot4_ignition_toolbox_lib
-[ 80%] [32mBuilding CXX object CMakeFiles/turtlebot4_ignition_hmi_node.dir/src/hmi_main.cpp.o[0m
-[100%] [32m[1mLinking CXX executable turtlebot4_ignition_hmi_node[0m
-[100%] Built target turtlebot4_ignition_hmi_node
