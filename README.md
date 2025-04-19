@@ -1,5 +1,5 @@
 # 5335-final-project
-Keep the robot safe while travesing through mazes. 
+Keep the robot safe while traversing through mazes. 
 
 ## Stages and progress
 | Stage | Simulation Progress | Physical Robot Progress |
@@ -36,5 +36,5 @@ Keep the robot safe while travesing through mazes.
 - To map the environment: `make run-mapping`
 
 ### When Gazebo Simulator and Rivz started
-- create a starting pose in Rivz matching the robot's starting pose
-- then you will be able to set goal pose and let it navigate through to the goal pose
+- Create a starting pose in RViz matching the robot's starting pose
+- Then you will be able to set goal pose and let it navigate through to the goal pose
