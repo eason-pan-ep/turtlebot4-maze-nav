@@ -9,7 +9,7 @@
   <maintainer email="liu.fangq@northeastern.edu">Leo</maintainer>
   <license>Apache-2.0</license>
 
-  <buildtool_depend>ament_python</buildtool_depend>
+  <buildtool_depend>ament_cmake_python</buildtool_depend>
 
   <depend>rclpy</depend>
   <depend>geometry_msgs</depend>
@@ -22,17 +22,17 @@
   <depend>tf2_ros</depend>
   <depend>tf_transformations</depend>
   <depend>cv_bridge</depend>
-  <depend>opencv-python</depend>
+  <depend>python3-opencv</depend>
   <depend>aruco</depend>
   <depend>image_transport</depend>
-  <depend>vision_msgs<depend>
-
+  <depend>vision_msgs</depend>
 
   <exec_depend>nav2_bringup</exec_depend>
   <exec_depend>turtlebot4_simulator</exec_depend>
   <exec_depend>rviz2</exec_depend>
   <exec_depend>python3-numpy</exec_depend>
   <exec_depend>python3-transforms3d</exec_depend>
+  <exec_depend>python3-pip</exec_depend>
 
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>
@@ -40,7 +40,7 @@
   <test_depend>python3-pytest</test_depend>
 
   <export>
-    <build_type>ament_python</build_type>
+    <build_type>ament_cmake_python</build_type>
     <data_files>
         <data path="config">
           <file>config/nav2_params.yaml</file>
@@ -49,6 +49,6 @@
           <file>launch/obstacle_navigation.launch.py</file>
           <file>launch/safety_params.launch.py</file>
         </data>
-      </data_files>
-    </export>
+    </data_files>
+  </export>
 </package>
