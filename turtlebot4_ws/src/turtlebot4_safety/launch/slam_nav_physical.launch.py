@@ -13,7 +13,7 @@ def generate_launch_description():
     turtlebot4_navigation_dir = get_package_share_directory('turtlebot4_navigation')
     turtlebot4_safety_dir = get_package_share_directory('turtlebot4_safety')
     
-    # Map file path - using your empty map that has walls but no obstacles
+    # Map file path - using empty map that has walls but no obstacles
     map_dir = os.path.join(turtlebot4_safety_dir, 'maps')
     map_yaml_file = os.path.join(map_dir, 'lab211_empty.yaml')
     

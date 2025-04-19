@@ -2,10 +2,10 @@ package.xml
 setup.cfg
 setup.py
 config/nav2_params.yaml
-launch/hybrid_navigation.launch.py
 launch/obstacle_navigation.launch.py
 launch/safety_params.launch.py
 launch/slam_nav_AR_sim.launch.py
+launch/slam_nav_physical.launch.py
 launch/slam_navigation.launch.py
 launch/slam_navigation_AR.launch.py
 launch/slam_with_room_navigation.launch.py

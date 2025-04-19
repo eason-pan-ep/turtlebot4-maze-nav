@@ -11,7 +11,7 @@ def generate_launch_description():
     turtlebot4_safety_dir = get_package_share_directory('turtlebot4_safety')
     turtlebot4_ignition_bringup_dir = get_package_share_directory('turtlebot4_ignition_bringup')
     
-    # Map file path - using your empty map that has walls but no obstacles
+    # Map file path - using empty map that has walls but no obstacles
     map_dir = os.path.join(get_package_share_directory('turtlebot4_safety'), 'maps')
     map_file = os.path.join(map_dir, 'lab211_empty.yaml')
     
@@ -25,14 +25,14 @@ def generate_launch_description():
             os.path.join(turtlebot4_ignition_bringup_dir, 'launch', 'turtlebot4_ignition.launch.py')
         ]),
         launch_arguments={
-            'world': 'lab211_with_boxes_1',  # Your custom world
+            'world': 'lab211_with_boxes_1',  # custom world
             'rviz': 'true',                  # Launch with RViz
             'model': 'lite',                # Use the LITE model
             'nav2': 'true',                  # Launch with Nav2
             'slam': 'false',                 # No SLAM (using map)
             'localization': 'true',          # Use AMCL localization
             'map': map_file,                 # Use empty map
-            'nav2_params_file': nav2_params_file  # Use your custom nav2 params
+            'nav2_params_file': nav2_params_file  # custom nav2 params
         }.items()
     )
     
