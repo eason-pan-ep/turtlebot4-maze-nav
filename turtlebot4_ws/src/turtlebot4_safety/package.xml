@@ -21,6 +21,12 @@
   <depend>visualization_msgs</depend>
   <depend>tf2_ros</depend>
   <depend>tf_transformations</depend>
+  <depend>cv_bridge</depend>
+  <depend>opencv-python</depend>
+  <depend>aruco</depend>
+  <depend>image_transport</depend>
+  <depend>vision_msgs<depend>
+
 
   <exec_depend>nav2_bringup</exec_depend>
   <exec_depend>turtlebot4_simulator</exec_depend>

@@ -33,6 +33,8 @@ setup(
         'console_scripts': [
             'safety_params = turtlebot4_safety.scripts.safety_params:main',
             'obstacle_avoidance_nav = turtlebot4_safety.scripts.obstacle_avoidance_nav:main',
+            'fiducial_detection_node = turtlebot4_safety.scripts.fiducial_detection_node:main',
+            'direction_navigation_node = turtlebot4_safety.scripts.direction_navigation_node:main',
         ],
     },
 )
