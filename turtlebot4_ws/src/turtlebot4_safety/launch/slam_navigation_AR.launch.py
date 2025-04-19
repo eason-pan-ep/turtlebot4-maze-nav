@@ -12,6 +12,8 @@ def generate_launch_description():
     # Get directory paths
     turtlebot4_safety_dir = get_package_share_directory('turtlebot4_safety')
     turtlebot4_navigation_dir = get_package_share_directory('turtlebot4_navigation')
+    turtlebot4_bringup_dir = get_package_share_directory('turtlebot4_bringup')
+    turtlebot4_viz_dir = get_package_share_directory('turtlebot4_viz')
     
     # Map file path (if needed)
     map_dir = os.path.join(turtlebot4_safety_dir, 'maps')
@@ -19,6 +21,13 @@ def generate_launch_description():
     
     # Launch arguments
     use_sim_time = LaunchConfiguration('use_sim_time', default='false')  # Set to false for physical robot
+    
+    # Include the TurtleBot4 physical robot bringup
+    turtlebot4_robot_launch = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource([
+            os.path.join(turtlebot4_bringup_dir, 'launch', 'robot.launch.py')
+        ])
+    )
     
     # Launch SLAM - using async for better performance on Raspberry Pi
     slam_launch = IncludeLaunchDescription(
@@ -35,6 +44,16 @@ def generate_launch_description():
     nav2_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource([
             os.path.join(turtlebot4_navigation_dir, 'launch', 'nav2.launch.py')
+        ]),
+        launch_arguments={
+            'use_sim_time': use_sim_time,
+        }.items()
+    )
+    
+    # Include RViz visualization
+    rviz_launch = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource([
+            os.path.join(turtlebot4_viz_dir, 'launch', 'view_robot.launch.py')
         ]),
         launch_arguments={
             'use_sim_time': use_sim_time,
@@ -105,11 +124,17 @@ def generate_launch_description():
         DeclareLaunchArgument('use_sim_time', default_value='false',
                              description='Use simulation time if true'),
         
+        # Launch physical robot
+        turtlebot4_robot_launch,
+        
         # Launch SLAM
         slam_launch,
         
         # Launch Nav2
         nav2_launch,
+        
+        # Launch RViz visualization
+        rviz_launch,
         
         # Launch TF buffer server
         tf_buffer_server,

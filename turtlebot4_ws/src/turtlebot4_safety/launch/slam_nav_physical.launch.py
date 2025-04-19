@@ -12,6 +12,7 @@ def generate_launch_description():
     turtlebot4_bringup_dir = get_package_share_directory('turtlebot4_bringup')
     turtlebot4_navigation_dir = get_package_share_directory('turtlebot4_navigation')
     turtlebot4_safety_dir = get_package_share_directory('turtlebot4_safety')
+    turtlebot4_viz_dir = get_package_share_directory('turtlebot4_viz')
     
     # Map file path - using empty map that has walls but no obstacles
     map_dir = os.path.join(turtlebot4_safety_dir, 'maps')
@@ -24,10 +25,7 @@ def generate_launch_description():
     turtlebot4_robot_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource([
             os.path.join(turtlebot4_bringup_dir, 'launch', 'robot.launch.py')
-        ]),
-        launch_arguments={
-            'model': 'lite',
-        }.items()
+        ])
     )
     
     # Include SLAM toolbox for real robot
@@ -48,6 +46,16 @@ def generate_launch_description():
         launch_arguments={
             'use_sim_time': 'false',
             'map': map_yaml_file,
+        }.items()
+    )
+    
+    # Include RViz
+    rviz_launch = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource([
+            os.path.join(turtlebot4_viz_dir, 'launch', 'view_robot.launch.py')
+        ]),
+        launch_arguments={
+            'use_sim_time': 'false',
         }.items()
     )
     
@@ -73,9 +81,9 @@ def generate_launch_description():
             'use_sim_time': False,
             'inflation_radius': 0.20,
             'obstacle_range': 3.5,
-            'min_approach_distance': 0.15,  # Slightly increased for physical robot
-            'max_vel_x': 0.12,              # Slightly reduced for physical robot
-            'footprint_padding': 0.10,      # Increased for safer physical navigation
+            'min_approach_distance': 0.15,
+            'max_vel_x': 0.12,
+            'footprint_padding': 0.10,
         }]
     )
     
@@ -87,7 +95,7 @@ def generate_launch_description():
         output='screen',
         parameters=[{
             'use_sim_time': False,
-            'obstacle_threshold': 0.55,     # Slightly increased for physical sensors
+            'obstacle_threshold': 0.55,
             'scan_angle_min': -60.0,
             'scan_angle_max': 60.0,
             'inflation_radius': 0.20,
@@ -114,6 +122,9 @@ def generate_launch_description():
         
         # Launch Nav2
         nav2_launch,
+        
+        # Launch RViz
+        rviz_launch,
         
         # Launch the map server with prior map
         map_server_node,
