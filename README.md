@@ -38,3 +38,33 @@ Keep the robot safe while traversing through mazes.
 ### When Gazebo Simulator and Rivz started
 - Create a starting pose in RViz matching the robot's starting pose
 - Then you will be able to set goal pose and let it navigate through to the goal pose
+
+## Project Technical Design
+![](img/technical_design.png)
+### Three Operating Stages:
+- Stage 1: Environment with all obstacles mapped
+- Stage 2: Environment with no obstacles mapped (SLAM on-the-fly)
+- Stage 3: Environment with fiducial (AR) markers for navigation guidance
+
+### Core ROS2 Components:
+- SLAM node for real-time mapping
+- Nav2 navigation stack for path planning and execution
+- RViz for visualization and manual goal setting
+
+### Custom Nodes:
+- safety_params.py: Dynamically adjusts navigation safety parameters
+- obstacle_avoidance_nav.py: Custom navigation with enhanced obstacle avoidance
+- fiducial_detection_node.py: Detects AR markers using camera feed
+- direction_navigation_node.py: Processes direction commands from markers
+
+### Data Flow:
+- LiDAR sensor → SLAM/Nav2 → Obstacle avoidance → Motor commands
+- Camera → Fiducial detection → Direction commands → Navigation goals
+- Safety parameters continuously adjust Nav2 behavior
+
+### Key Technologies:
+- ROS2 Humble
+- OpenCV (ArUco marker detection)
+- Nav2 navigation stack
+- TF2 for coordinate transformations
+- Gazebo/Ignition for simulation
