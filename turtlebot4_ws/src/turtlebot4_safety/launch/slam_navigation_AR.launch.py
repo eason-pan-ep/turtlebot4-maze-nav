@@ -6,6 +6,7 @@ from launch.substitutions import LaunchConfiguration
 from launch_ros.actions import Node
 from ament_index_python.packages import get_package_share_directory
 import os
+import cv2
 
 def generate_launch_description():
     # Get directory paths
@@ -49,7 +50,9 @@ def generate_launch_description():
         parameters=[{
             'use_sim_time': use_sim_time,
             'marker_size': 0.2,  # Size in meters
-            'dictionary_id': 5  # DICT_5X5_100
+            'dictionary_id': cv2.aruco.DICT_5X5_100,
+            'tf_buffer_duration': 30.0,  # Longer buffer duration
+            'tf_timeout': 1.0  # Longer timeout for transform lookups
         }]
     )
     
@@ -62,7 +65,9 @@ def generate_launch_description():
         parameters=[{
             'use_sim_time': use_sim_time,
             'turn_angle': 1.5708,  # 90 degrees in radians
-            'forward_distance': 2.0  # 2 meters
+            'forward_distance': 2.0,  # 2 meters
+            'tf_buffer_duration': 30.0,
+            'tf_timeout': 1.0
         }]
     )
     
@@ -82,6 +87,18 @@ def generate_launch_description():
         }]
     )
     
+    # TF buffer server with increased buffer duration
+    tf_buffer_server = Node(
+        package='tf2_ros',
+        executable='buffer_server',
+        name='tf_buffer_server',
+        parameters=[{
+            'buffer_duration': 15.0,  # Seconds
+            'use_sim_time': use_sim_time
+        }],
+        output='screen'
+    )
+    
     # Define LaunchDescription variable and actions
     return LaunchDescription([
         # Launch arguments
@@ -93,6 +110,9 @@ def generate_launch_description():
         
         # Launch Nav2
         nav2_launch,
+        
+        # Launch TF buffer server
+        tf_buffer_server,
         
         # Launch fiducial detection node
         fiducial_detection_node,

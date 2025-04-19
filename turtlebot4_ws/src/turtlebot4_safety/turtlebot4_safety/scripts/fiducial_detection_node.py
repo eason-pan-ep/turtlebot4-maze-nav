@@ -23,7 +23,7 @@ class FiducialDetectionNode(Node):
         dict_id = self.get_parameter('dictionary_id').value
         
         # Create ArUco detector
-        self.aruco_dict = cv2.aruco.Dictionary_get(dict_id)
+        self.aruco_dict = cv2.aruco.getPredefinedDictionary(dict_id)
         self.aruco_params = cv2.aruco.DetectorParameters_create()
         
         # Map marker IDs to direction commands
@@ -41,8 +41,7 @@ class FiducialDetectionNode(Node):
         )
         self.camera_info_sub = self.create_subscription(
             CameraInfo,
-            # '/camera/camera_info',  # For simulation
-            'oakd/rgb/preview/camera_info',  # For both simulation and physical robot
+            'oakd/rgb/preview/camera_info',
             self.camera_info_callback,
             10
         )
@@ -131,7 +130,7 @@ class FiducialDetectionNode(Node):
     def broadcast_marker_tf(self, marker_id, rvec, tvec, header):
         """Broadcast the marker's transform"""
         transform = TransformStamped()
-        transform.header.stamp = self.get_clock().now().to_msg()
+        transform.header.stamp = header.stamp
         transform.header.frame_id = header.frame_id
         transform.child_frame_id = f'marker_{marker_id}'
         

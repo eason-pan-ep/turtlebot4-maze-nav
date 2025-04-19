@@ -45,7 +45,9 @@ def generate_launch_description():
         parameters=[{
             'use_sim_time': use_sim_time,
             'marker_size': 0.2,
-            'dictionary_id': cv2.aruco.DICT_5X5_100
+            'dictionary_id': cv2.aruco.DICT_5X5_100,
+            'tf_buffer_duration': 30.0,  # Longer buffer duration
+            'tf_timeout': 1.0  # Longer timeout for transform lookups
         }]
     )
     
@@ -58,7 +60,9 @@ def generate_launch_description():
         parameters=[{
             'use_sim_time': use_sim_time,
             'turn_angle': 1.5708,          # 90 degrees in radians
-            'forward_distance': 2.0        # 2 meters
+            'forward_distance': 2.0,        # 2 meters
+            'tf_buffer_duration': 30.0,
+            'tf_timeout': 1.0
         }]
     )
     
@@ -78,6 +82,18 @@ def generate_launch_description():
         }]
     )
     
+    # TF buffer server with increased buffer duration
+    tf_buffer_server = Node(
+        package='tf2_ros',
+        executable='buffer_server',
+        name='tf_buffer_server',
+        parameters=[{
+            'buffer_duration': 15.0,  # Seconds
+            'use_sim_time': use_sim_time
+        }],
+        output='screen'
+    )
+    
     # Launch args declaration
     declare_use_sim_time = DeclareLaunchArgument(
         'use_sim_time',
@@ -85,12 +101,16 @@ def generate_launch_description():
         description='Use simulation time if true'
     )
     
+    
     return LaunchDescription([
         # Declare launch args
         declare_use_sim_time,
         
         # Launch TurtleBot4 Ignition simulation with SLAM
         turtlebot4_sim_launch,
+        
+        # Launch TF buffer server
+        tf_buffer_server,
         
         # Launch fiducial detection node
         fiducial_detection_node,

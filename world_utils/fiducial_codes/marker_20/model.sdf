@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <sdf version="1.5">
-  <model name="marker_id_10">
+  <model name="marker_id_20">
     <static>true</static>
     <link name="link">
       <pose>0.0 0.0 0.0005 0.0 0.0 0.0</pose>
@@ -19,9 +19,9 @@
         </geometry>
         <material>
           <script>
-            <name>marker_id_10</name>
-            <uri>model://marker_10/materials/scripts/</uri>
-            <uri>model://marker_10/materials/textures/</uri>
+            <name>marker_id_20</name>
+            <uri>model://marker_20/materials/scripts/</uri>
+            <uri>model://marker_20/materials/textures/</uri>
           </script>
         </material>
       </visual>
