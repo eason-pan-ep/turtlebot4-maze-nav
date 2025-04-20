@@ -6,6 +6,10 @@
 clean-up:
 	@echo "Cleaning up all install/build/log folders"
 	rm -rf build install log
+### install required Python packages ###
+python-setup:
+	@echo "Installing required Python packages"
+	bash -c "pip install -r requirements.txt"
 ### build all packages including simulation packages ###
 build-all:
 	@echo "Building the turtlebot4 simulation"

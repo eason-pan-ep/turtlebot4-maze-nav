@@ -9,7 +9,7 @@
   <maintainer email="liu.fangq@northeastern.edu">Leo</maintainer>
   <license>Apache-2.0</license>
 
-  <buildtool_depend>ament_cmake_python</buildtool_depend>
+  <buildtool_depend>ament_python</buildtool_depend>
 
   <depend>rclpy</depend>
   <depend>geometry_msgs</depend>
@@ -40,7 +40,7 @@
   <test_depend>python3-pytest</test_depend>
 
   <export>
-    <build_type>ament_cmake_python</build_type>
+    <build_type>ament_python</build_type>
     <data_files>
         <data path="config">
           <file>config/nav2_params.yaml</file>
