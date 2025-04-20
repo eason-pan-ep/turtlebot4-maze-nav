@@ -47,7 +47,8 @@ run-s3-sim:
 	bash -c "source install/setup.bash && \
 	ros2 launch turtlebot4_safety slam_nav_AR_sim.launch.py"
 
-### below are 2 runs for testing simulation works with virtual lab211 with boxes, and map with only walls or with boxes ###
+### below are 2 runs for testing simulation works with virtual lab211 with boxes, 
+### and map with only walls or with boxes ###
 run-sim-boxes:
 	@echo "Running the turtlebot4 simulation with lab 211 with boxes and scanned map"
 	@echo "Ctrl+C to stop the simulation\n"
