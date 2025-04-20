@@ -11,7 +11,7 @@ Keep the robot safe while traversing through mazes.
 
 ## Installation and Running
 ### System Requirements
-- Make sure these ROS2 and these ROS2 packges are installed
+- Make sure these ROS2 and these ROS2 packages are installed
     - ros-humble-turtlebot4-bringup, 
     - ros-humble-turtlebot4-base 
 - For simulation runs, make sure Gazebo Simulator, Ignition Fortress are installed
