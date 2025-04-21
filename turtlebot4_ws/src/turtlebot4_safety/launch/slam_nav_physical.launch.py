@@ -77,21 +77,6 @@ def generate_launch_description():
         }]
     )
     
-    # Obstacle avoidance navigation node
-    obstacle_nav_node = Node(
-        package='turtlebot4_safety',
-        executable='obstacle_avoidance_nav',
-        name='obstacle_avoidance_navigator',
-        output='screen',
-        parameters=[{
-            'use_sim_time': False,
-            'obstacle_threshold': 0.55,
-            'scan_angle_min': -60.0,
-            'scan_angle_max': 60.0,
-            'inflation_radius': 0.20,
-            'footprint_padding': 0.10,
-        }]
-    )
     
     # Launch args declaration
     declare_use_sim_time = DeclareLaunchArgument(
@@ -118,7 +103,4 @@ def generate_launch_description():
         
         # Launch safety parameter node
         safety_params_node,
-        
-        # Launch obstacle avoidance navigation node
-        obstacle_nav_node,
     ])
