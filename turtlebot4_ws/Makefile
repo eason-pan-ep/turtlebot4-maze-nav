@@ -78,7 +78,7 @@ run-sim-empty:
 ### help mapping the environment ###
 run-mapping:
 	@echo "Running the turtlebot4 simulation with lab 211 to map the environment"
-	@echo "Ctrl+C to stop the simulation\n"
+	@echo "Ctrl+C to stop\n"
 	bash -c "source install/setup.bash && \
 	ros2 launch turtlebot4_ignition_bringup turtlebot4_ignition.launch.py \
 	world:=lab211_with_boxes_1 \
@@ -91,6 +91,20 @@ run-mapping:
 ### Additional node for running with boxes mapped ###
 launch-node-adj:
 	@echo "Launching the node to adjust the map"
-	@echo "Ctrl+C to stop the simulation\n"
+	@echo "Ctrl+C to stop\n"
 	bash -c "source install/setup.bash && \
 	ros2 launch turtlebot4_safety safety_params.launch.py"
+
+### Run RViz seperately ###
+start-rviz:
+	@echo "Starting RViz"
+	@echo "Ctrl+C to stop\n"
+	bash -c "source install/setup.bash && \
+	ros2 launch turtlebot4_viz view_robot.launch.py"
+
+### Drive the robot ###
+drive-bot:
+	@echo "Driving a Turtlebot4 Lite"
+	@echo "Ctrl+C to stop the simulation\n"
+	bash -c "source install/setup.bash && \
+	ros2 run teleop_twist_keyboard teleop_twist_keyboard"

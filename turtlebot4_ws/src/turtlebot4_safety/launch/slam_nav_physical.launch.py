@@ -16,7 +16,7 @@ def generate_launch_description():
     
     # Map file path - using empty map that has walls but no obstacles
     map_dir = os.path.join(turtlebot4_safety_dir, 'maps')
-    map_yaml_file = os.path.join(map_dir, 'lab211_empty.yaml')
+    map_yaml_file = os.path.join(map_dir, 'lab_map.yaml')
     
     # Launch arguments
     use_sim_time = LaunchConfiguration('use_sim_time', default='false')
@@ -46,16 +46,6 @@ def generate_launch_description():
         launch_arguments={
             'use_sim_time': 'false',
             'map': map_yaml_file,
-        }.items()
-    )
-    
-    # Include RViz
-    rviz_launch = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource([
-            os.path.join(turtlebot4_viz_dir, 'launch', 'view_robot.launch.py')
-        ]),
-        launch_arguments={
-            'use_sim_time': 'false',
         }.items()
     )
     
@@ -122,9 +112,6 @@ def generate_launch_description():
         
         # Launch Nav2
         nav2_launch,
-        
-        # Launch RViz
-        rviz_launch,
         
         # Launch the map server with prior map
         map_server_node,
