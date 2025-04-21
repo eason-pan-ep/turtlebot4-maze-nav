@@ -26,7 +26,7 @@ def generate_launch_description():
             os.path.join(turtlebot4_ignition_bringup_dir, 'launch', 'turtlebot4_ignition.launch.py')
         ]),
         launch_arguments={
-            'world': 'lab211_with_boxes_1',  # Custom world with fiducial markers
+            'world': 'lab211_with_boxes_fiducial_test',  # Custom world with fiducial markers
             'model': 'lite',                   # Use the LITE model
             'rviz': 'true',                    # Launch with RViz
             'nav2': 'true',                    # Launch with Nav2
