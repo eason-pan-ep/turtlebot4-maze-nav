@@ -8,7 +8,11 @@ Keep the robot safe while traversing through mazes.
 | S2 - no obstacles mapped out | 100% - implemented, video recorded | to be tested |
 | S3 - have fiducial codes guiding the robot | implemented, can't test in simulation | to be tested |
 
-
+## Development Lifecycle
+### Basic Stage
+![](img/basic_stage.png)
+### Main Development Stage
+![](img/main_dev_stage.png)
 ## Installation and Running
 ### System Requirements
 - Linux Ubuntu 22.04 LTS
