@@ -1,4 +1,4 @@
-# 5335-final-project
+# Turtlebot4 Maze Navigation Project
 Keep the robot safe while traversing through mazes. 
 
 ## Stages and progress
